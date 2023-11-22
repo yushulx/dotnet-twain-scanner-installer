@@ -13,9 +13,14 @@ The project demonstrates how to use [WiX Toolset](https://wixtoolset.org/) to cr
     <File Source="..\WinFormsDocScan\bin\Release\net7.0-windows\WinFormsDocScan.pdb" />
     <File Source="..\WinFormsDocScan\bin\Release\net7.0-windows\WinFormsDocScan.runtimeconfig.json" />
     ```
+
+    ![docscan-msi-installer](https://github.com/yushulx/dotnet-twain-scanner-installer/assets/2202306/111d7d06-3142-4caf-a3c5-ae97fd995ad8)
+
 3. Build the `BundleDocScan` project to generate a bundle installer for the document scanner application and Dynamsoft Service. You need to modify the file paths in the `Bundle.wxs` file.
 
     ```xml
     <MsiPackage SourceFile="..\PackageDocScan\bin\x64\Release\en-US\PackageDocScan.msi" />
     <MsiPackage SourceFile="msi\DynamsoftServiceSetup.msi" />
     ```
+
+    ![wix-bundle](https://github.com/yushulx/dotnet-twain-scanner-installer/assets/2202306/89851867-d603-4ef4-afaa-9ee1965ae3fd)
